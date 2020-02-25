@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portfolio</title>
+    <meta name="author" content="Michael Dufrene">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio de Michael Dufresne, programmeur web."> 
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="section-rideau">
+        <div>
+            &nbsp
+        </div>
+        <div>
+            &nbsp
+        </div>
+    </section>
+    <header>
+        <ul>
+            <li><img src="images/logo.png" alt="Logo du portfolio de Michael Dufresne,programmeur web"></li>
+            <li>Découvrez mon portfolio</li>
+        </ul>
+    </header>
+    <section class="section-navigation">
+        <nav>
+            <li class="liwhitebackground click-li" onclick="gestionNavigation(0);"></li>
+            <li class="click-li" onclick="gestionNavigation(1);"></li>
+            <li onclick="gestionNavigation(2);"></li>
+        </nav>
+    </section>
+    <main>
+        <section class="section-apropos">
+            <div>
+                <div class="after-before-image">
+                    <img class="first-image" src="images/portfolio-image.png" alt="image de Michael Dufresne,programmeur dans le domain du web">
+                    <img src="images/portfolio-image2.png" alt="image de Michael Dufresne,programmeur dans le domain du web">
+                </div>
+                <p>Mon nom est Michael Dufresne, j’ai étudié
+                    au cégep de maisonneuve en techniques
+                    en multimédia, je suis intégrateur Web de formation et je suis un passionné de nouvelle technologie web.</p>
+            </div>
+        </section>
+        <section class="section-competence">
+            <h1>Compétences</h1>
+            <div class="div-flex-compe">
+                <div class="div-competence">
+                    <nav>
+                        <span>Front-end</span>
+                        <li class="competenceActive" onclick="changeCompetence(0);"><img class="front-image" src="images/front.png" alt="image front-end"></li>
+                        <li class="li-after" onclick="changeCompetence(1);"></li>
+                        <li class="li-after" onclick="changeCompetence(2);"><img class="back-image" src="images/back.png" alt="image back-end"></li>
+                        <span>Back-end</span>
+                    </nav>
+                </div>
+                <div class="competence-texte">
+                    <div>
+                        <p>HTML</p>
+                    </div>
+                    <div>
+                        <p>CSS</p>
+                    </div>
+                    <div>
+                        <p>jQuery</p>
+                    </div>
+                    <div>
+                        <p>React</p>
+                    </div>
+                    <div>
+                        <p>Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-realisations">
+            <div>
+                <h1>Réalisations</h1>
+            </div>
+            <div class="div-realisations">
+                <p>RUSH THE GAME</p>
+                <img class="image-realisation" src="images/realisations.png" alt="réalisations de Michael Dufresne">
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/portfolio.js"></script>
+</html>
